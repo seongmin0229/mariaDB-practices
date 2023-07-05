@@ -40,3 +40,24 @@ update pet
 set name = 'daongee'
 where name = '다옹이';
 
+-- delete: DML(D)
+delete 
+from pet
+where name = 'daongee';
+
+-- load data
+load data local infile 'c:\\pet.txt' into table pet;
+
+-- 내용에도 대소문자 구분이 없다.
+update pet
+set death = null
+where name != 'bowser';
+
+-- select 연습
+select name, species
+from pet
+where name = 'Bowser';
+
+select name, species, birth
+from pet
+where birth >= '1998-01-01';
