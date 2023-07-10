@@ -31,7 +31,7 @@ public class UpdateTest01 {
 				    "   set name = '" + deptName + "'" +
 					" where no = " + deptNo;
 				
-			pstmt = conn.prepareStatement(sql);
+			stmt = conn.prepareStatement(sql);
 			
 			//4. SQL 실행
 
